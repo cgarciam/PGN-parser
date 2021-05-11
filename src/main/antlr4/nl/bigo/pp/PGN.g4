@@ -103,7 +103,7 @@ move_number_indication
  ;
 
 san_move
- : SYMBOL
+ : SAN_SYMBOL SAN_SYMBOL?
  ;
 
 /// <recursive-variation> ::= ( <element-sequence> )
@@ -167,6 +167,27 @@ SPACES
  : [ \t\r\n]+ -> skip
  ;
 
+SAN_SYMBOL
+ : ((REGULAR_MOVE | CASTLING )('='[RNBQ])?([+#])?)
+ ;
+
+// Standard move:
+REGULAR_MOVE
+ : PIECE? FILE? RANK? [x]? RANK FILE
+ ;
+
+CASTLING
+ : 'O-O' | 'O-O-O'
+ ;
+
+RANK
+ : [a-h]
+ ;
+
+PIECE
+ : [RNBKQ]
+ ;
+
 /// A string token is a sequence of zero or more printing characters delimited by a
 /// pair of quote characters (ASCII decimal value 34, hexadecimal value 0x22).  An
 /// empty string is represented by two adjacent quotes.  (Note: an apostrophe is
@@ -187,6 +208,10 @@ STRING
 /// following the integer digit sequence.
 INTEGER
  : [0-9]+
+ ;
+
+FILE
+ : [1-8]
  ;
 
 /// A period character (".") is a token by itself.  It is used for move number
