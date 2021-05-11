@@ -11,6 +11,7 @@
   <name>pgn-parser</name>
 
   <properties>
+    <jdk.version>1.8</jdk.version>
     <antlr4.version>4.2</antlr4.version>
   </properties>
 
@@ -115,6 +116,17 @@
               <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
             </manifest>
           </archive>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <source>${jdk.version}</source>
+          <target>${jdk.version}</target>
+          <encoding>${project.build.sourceEncoding}</encoding>
         </configuration>
       </plugin>
 
