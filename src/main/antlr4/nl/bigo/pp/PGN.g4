@@ -27,6 +27,7 @@
  * Project      : A Portable Game Notation (PGN) ANTLR 4 grammar
  *                and parser.
  * Developed by : Bart Kiers, bart@big-o.nl
+ *                César García Mauricio, gamo7ster@gmail.com
  */
 
 //
@@ -98,6 +99,7 @@ element
 
 move_number_indication
  : INTEGER PERIOD?
+ | INTEGER PERIOD PERIOD PERIOD
  ;
 
 san_move
