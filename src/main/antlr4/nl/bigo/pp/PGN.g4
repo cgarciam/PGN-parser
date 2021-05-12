@@ -168,7 +168,7 @@ SPACES
  ;
 
 SAN_SYMBOL
- : ((REGULAR_MOVE | CASTLING )('='[RNBQ])?([+#])?)
+ : ((REGULAR_MOVE | CASTLING | NULL_MOVE)('='[RNBQ])?([+#])?)
  ;
 
 // Standard move:
@@ -179,6 +179,9 @@ REGULAR_MOVE
 CASTLING
  : 'O-O' | 'O-O-O'
  ;
+
+NULL_MOVE : 'Z0';
+
 
 RANK
  : [a-h]
