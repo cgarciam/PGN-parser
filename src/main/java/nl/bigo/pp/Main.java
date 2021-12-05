@@ -35,10 +35,13 @@ import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.tree.ParseTree;
 import org.antlr.v4.runtime.tree.ParseTreeWalker;
 
+import lombok.extern.slf4j.Slf4j;
+
 /**
  * A small demo class that demonstrates how to use the
  * generated parser classes.
  */
+@Slf4j
 public class Main {
 
   public static void main(String[] args) throws Exception {
@@ -49,7 +52,7 @@ public class Main {
     }
 
     String fileName = args[0];
-    System.out.printf("Parsing `%s`...", fileName);
+    log.debug("Parsing {}...", fileName);
 
     // Create the lexer and parser.
     PGNLexer lexer = new PGNLexer(new ANTLRFileStream(fileName));
@@ -60,6 +63,6 @@ public class Main {
     ParseTree tree = parser.parse();
     walker.walk(new DemoListener(), tree);
 
-    System.out.println("\nDone!");
+    log.debug("Done!");
   }
 }

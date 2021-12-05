@@ -32,6 +32,8 @@ package nl.bigo.pp;
 
 import org.antlr.v4.runtime.misc.NotNull;
 
+import lombok.extern.slf4j.Slf4j;
+
 /**
  * A small demo listener that retrieves the player's name and
  * the result from the game termination production rule. Of course
@@ -39,6 +41,7 @@ import org.antlr.v4.runtime.misc.NotNull;
  * [Result "..."], but this is just a quick example of how to
  * retrieve information from the parser context objects.
  */
+@Slf4j
 public class DemoListener extends PGNBaseListener {
 
   private String white = null;
@@ -72,7 +75,7 @@ public class DemoListener extends PGNBaseListener {
 
     String result = ctx.game_termination().getText();
 
-    System.out.printf("`%s` with white against `%s` with black resulted in: %s\n",
-        white, black, result);
+    log.debug("{} with white against {} with black resulted in: {}", white, black, result);
   }
+
 }
