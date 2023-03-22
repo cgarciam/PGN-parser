@@ -1,5 +1,7 @@
 package nl.bigo.pp;
 
+import static org.apache.commons.lang3.StringUtils.isNotBlank;
+
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -48,7 +50,9 @@ public class StringUtils {
         final int lineIndex = findIndexOfMostSimilarLine(parsedComment, lines);
         final String initialGuess = lines.get(lineIndex);
         final String guess = makeGuess(parsedComment, initialGuess);
-        log.debug("Retrieved comment is:\n{}", guess);
+        if (log.isDebugEnabled() && isNotBlank(guess)) {
+            log.debug("Retrieved comment is:\n{}", guess);
+        }
         return guess;
     }
 
