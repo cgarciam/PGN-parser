@@ -92,9 +92,10 @@ element_sequence
 ///               <SAN-move>
 ///               <numeric-annotation-glyph>
 element
- : move_number_indication
+ : (braceComment)*? move_number_indication
  | san_move
- | NUMERIC_ANNOTATION_GLYPH
+ | NUMERIC_ANNOTATION_GLYPH braceComment?
+ | braceComment
  ;
 
 move_number_indication
@@ -103,12 +104,13 @@ move_number_indication
  ;
 
 san_move
- : SAN_SYMBOL SAN_SYMBOL?
+ : braceComment? (PLY | NULL_MOVE) braceComment? (PLY | NULL_MOVE)? braceComment?
  ;
 
 /// <recursive-variation> ::= ( <element-sequence> )
 recursive_variation
- : LEFT_PARENTHESIS element_sequence RIGHT_PARENTHESIS
+ : LEFT_PARENTHESIS braceComment? element_sequence braceComment? RIGHT_PARENTHESIS
+// : LEFT_PARENTHESIS element_sequence RIGHT_PARENTHESIS
  ;
 
 /// <game-termination> ::= 1-0
@@ -147,10 +149,18 @@ REST_OF_LINE_COMMENT
 /// loses its special meaning and is ignored.  A semicolon appearing inside of a
 /// brace comment loses its special meaning and is ignored.  Braces appearing
 /// inside of a semicolon comments lose their special meaning and are ignored.
-BRACE_COMMENT
- : '{' ~'}'* '}' -> skip
+// ORIG:
+//braceComment
+// : '{' ~'}'* '}'
+// ;
+
+braceComment
+ : BRACE_COMMENT+
  ;
 
+BRACE_COMMENT
+ : '{' .*? '}'
+ ;
 /// There is a special escape mechanism for PGN data.  This mechanism is triggered
 /// by a percent sign character ("%") appearing in the first column of a line; the
 /// data on the rest of the line is ignored by publicly available PGN scanning
@@ -167,7 +177,7 @@ SPACES
  : [ \t\r\n]+ -> skip
  ;
 
-SAN_SYMBOL
+PLY
  : ( CASTLING | PAWN_MOVE | PIECE_MOVE ) ( ['+','#'] )? ( COMMENT )?
  ;
 
@@ -1478,7 +1488,7 @@ NULL_MOVE : 'Z0';
 /// of strings.  A string token is terminated by its closing quote.  Currently, a
 /// string is limited to a maximum of 255 characters of data.
 STRING
- : '"' ('\\\\' | '\\"' | ~[\\"])* '"'
+ : '"' .*? '"'
  ;
 
 /// An integer token is a sequence of one or more decimal digit characters.  It is
