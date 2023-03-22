@@ -110,7 +110,6 @@ san_move
 /// <recursive-variation> ::= ( <element-sequence> )
 recursive_variation
  : LEFT_PARENTHESIS braceComment? element_sequence braceComment? RIGHT_PARENTHESIS
-// : LEFT_PARENTHESIS element_sequence RIGHT_PARENTHESIS
  ;
 
 /// <game-termination> ::= 1-0
@@ -149,11 +148,6 @@ REST_OF_LINE_COMMENT
 /// loses its special meaning and is ignored.  A semicolon appearing inside of a
 /// brace comment loses its special meaning and is ignored.  Braces appearing
 /// inside of a semicolon comments lose their special meaning and are ignored.
-// ORIG:
-//braceComment
-// : '{' ~'}'* '}'
-// ;
-
 braceComment
  : BRACE_COMMENT+
  ;
