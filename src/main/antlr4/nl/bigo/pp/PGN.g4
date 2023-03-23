@@ -845,6 +845,71 @@ QUEEN_MOVE :
         'Q1h7' | 'Q2h7' | 'Q3h7' | 'Q4h7' | 'Q5h7' | 'Q6h7' | 'Q7h7' | 'Q8h7' |
         'Q1h8' | 'Q2h8' | 'Q3h8' | 'Q4h8' | 'Q5h8' | 'Q6h8' | 'Q7h8' | 'Q8h8' | // 64
 
+        'Q1xa1' | 'Q2xa1' | 'Q3xa1' | 'Q4xa1' | 'Q5xa1' | 'Q6xa1' | 'Q7xa1' | 'Q8xa1' |
+        'Q1xa2' | 'Q2xa2' | 'Q3xa2' | 'Q4xa2' | 'Q5xa2' | 'Q6xa2' | 'Q7xa2' | 'Q8xa2' |
+        'Q1xa3' | 'Q2xa3' | 'Q3xa3' | 'Q4xa3' | 'Q5xa3' | 'Q6xa3' | 'Q7xa3' | 'Q8xa3' |
+        'Q1xa4' | 'Q2xa4' | 'Q3xa4' | 'Q4xa4' | 'Q5xa4' | 'Q6xa4' | 'Q7xa4' | 'Q8xa4' |
+        'Q1xa5' | 'Q2xa5' | 'Q3xa5' | 'Q4xa5' | 'Q5xa5' | 'Q6xa5' | 'Q7xa5' | 'Q8xa5' |
+        'Q1xa6' | 'Q2xa6' | 'Q3xa6' | 'Q4xa6' | 'Q5xa6' | 'Q6xa6' | 'Q7xa6' | 'Q8xa6' |
+        'Q1xa7' | 'Q2xa7' | 'Q3xa7' | 'Q4xa7' | 'Q5xa7' | 'Q6xa7' | 'Q7xa7' | 'Q8xa7' |
+        'Q1xa8' | 'Q2xa8' | 'Q3xa8' | 'Q4xa8' | 'Q5xa8' | 'Q6xa8' | 'Q7xa8' | 'Q8xa8' | // 64
+        'Q1xb1' | 'Q2xb1' | 'Q3xb1' | 'Q4xb1' | 'Q5xb1' | 'Q6xb1' | 'Q7xb1' | 'Q8xb1' |
+        'Q1xb2' | 'Q2xb2' | 'Q3xb2' | 'Q4xb2' | 'Q5xb2' | 'Q6xb2' | 'Q7xb2' | 'Q8xb2' |
+        'Q1xb3' | 'Q2xb3' | 'Q3xb3' | 'Q4xb3' | 'Q5xb3' | 'Q6xb3' | 'Q7xb3' | 'Q8xb3' |
+        'Q1xb4' | 'Q2xb4' | 'Q3xb4' | 'Q4xb4' | 'Q5xb4' | 'Q6xb4' | 'Q7xb4' | 'Q8xb4' |
+        'Q1xb5' | 'Q2xb5' | 'Q3xb5' | 'Q4xb5' | 'Q5xb5' | 'Q6xb5' | 'Q7xb5' | 'Q8xb5' |
+        'Q1xb6' | 'Q2xb6' | 'Q3xb6' | 'Q4xb6' | 'Q5xb6' | 'Q6xb6' | 'Q7xb6' | 'Q8xb6' |
+        'Q1xb7' | 'Q2xb7' | 'Q3xb7' | 'Q4xb7' | 'Q5xb7' | 'Q6xb7' | 'Q7xb7' | 'Q8xb7' |
+        'Q1xb8' | 'Q2xb8' | 'Q3xb8' | 'Q4xb8' | 'Q5xb8' | 'Q6xb8' | 'Q7xb8' | 'Q8xb8' | // 64
+        'Q1xc1' | 'Q2xc1' | 'Q3xc1' | 'Q4xc1' | 'Q5xc1' | 'Q6xc1' | 'Q7xc1' | 'Q8xc1' |
+        'Q1xc2' | 'Q2xc2' | 'Q3xc2' | 'Q4xc2' | 'Q5xc2' | 'Q6xc2' | 'Q7xc2' | 'Q8xc2' |
+        'Q1xc3' | 'Q2xc3' | 'Q3xc3' | 'Q4xc3' | 'Q5xc3' | 'Q6xc3' | 'Q7xc3' | 'Q8xc3' |
+        'Q1xc4' | 'Q2xc4' | 'Q3xc4' | 'Q4xc4' | 'Q5xc4' | 'Q6xc4' | 'Q7xc4' | 'Q8xc4' |
+        'Q1xc5' | 'Q2xc5' | 'Q3xc5' | 'Q4xc5' | 'Q5xc5' | 'Q6xc5' | 'Q7xc5' | 'Q8xc5' |
+        'Q1xc6' | 'Q2xc6' | 'Q3xc6' | 'Q4xc6' | 'Q5xc6' | 'Q6xc6' | 'Q7xc6' | 'Q8xc6' |
+        'Q1xc7' | 'Q2xc7' | 'Q3xc7' | 'Q4xc7' | 'Q5xc7' | 'Q6xc7' | 'Q7xc7' | 'Q8xc7' |
+        'Q1xc8' | 'Q2xc8' | 'Q3xc8' | 'Q4xc8' | 'Q5xc8' | 'Q6xc8' | 'Q7xc8' | 'Q8xc8' | // 64
+        'Q1xd1' | 'Q2xd1' | 'Q3xd1' | 'Q4xd1' | 'Q5xd1' | 'Q6xd1' | 'Q7xd1' | 'Q8xd1' |
+        'Q1xd2' | 'Q2xd2' | 'Q3xd2' | 'Q4xd2' | 'Q5xd2' | 'Q6xd2' | 'Q7xd2' | 'Q8xd2' |
+        'Q1xd3' | 'Q2xd3' | 'Q3xd3' | 'Q4xd3' | 'Q5xd3' | 'Q6xd3' | 'Q7xd3' | 'Q8xd3' |
+        'Q1xd4' | 'Q2xd4' | 'Q3xd4' | 'Q4xd4' | 'Q5xd4' | 'Q6xd4' | 'Q7xd4' | 'Q8xd4' |
+        'Q1xd5' | 'Q2xd5' | 'Q3xd5' | 'Q4xd5' | 'Q5xd5' | 'Q6xd5' | 'Q7xd5' | 'Q8xd5' |
+        'Q1xd6' | 'Q2xd6' | 'Q3xd6' | 'Q4xd6' | 'Q5xd6' | 'Q6xd6' | 'Q7xd6' | 'Q8xd6' |
+        'Q1xd7' | 'Q2xd7' | 'Q3xd7' | 'Q4xd7' | 'Q5xd7' | 'Q6xd7' | 'Q7xd7' | 'Q8xd7' |
+        'Q1xd8' | 'Q2xd8' | 'Q3xd8' | 'Q4xd8' | 'Q5xd8' | 'Q6xd8' | 'Q7xd8' | 'Q8xd8' | // 64
+        'Q1xe1' | 'Q2xe1' | 'Q3xe1' | 'Q4xe1' | 'Q5xe1' | 'Q6xe1' | 'Q7xe1' | 'Q8xe1' |
+        'Q1xe2' | 'Q2xe2' | 'Q3xe2' | 'Q4xe2' | 'Q5xe2' | 'Q6xe2' | 'Q7xe2' | 'Q8xe2' |
+        'Q1xe3' | 'Q2xe3' | 'Q3xe3' | 'Q4xe3' | 'Q5xe3' | 'Q6xe3' | 'Q7xe3' | 'Q8xe3' |
+        'Q1xe4' | 'Q2xe4' | 'Q3xe4' | 'Q4xe4' | 'Q5xe4' | 'Q6xe4' | 'Q7xe4' | 'Q8xe4' |
+        'Q1xe5' | 'Q2xe5' | 'Q3xe5' | 'Q4xe5' | 'Q5xe5' | 'Q6xe5' | 'Q7xe5' | 'Q8xe5' |
+        'Q1xe6' | 'Q2xe6' | 'Q3xe6' | 'Q4xe6' | 'Q5xe6' | 'Q6xe6' | 'Q7xe6' | 'Q8xe6' |
+        'Q1xe7' | 'Q2xe7' | 'Q3xe7' | 'Q4xe7' | 'Q5xe7' | 'Q6xe7' | 'Q7xe7' | 'Q8xe7' |
+        'Q1xe8' | 'Q2xe8' | 'Q3xe8' | 'Q4xe8' | 'Q5xe8' | 'Q6xe8' | 'Q7xe8' | 'Q8xe8' | // 64
+        'Q1xf1' | 'Q2xf1' | 'Q3xf1' | 'Q4xf1' | 'Q5xf1' | 'Q6xf1' | 'Q7xf1' | 'Q8xf1' |
+        'Q1xf2' | 'Q2xf2' | 'Q3xf2' | 'Q4xf2' | 'Q5xf2' | 'Q6xf2' | 'Q7xf2' | 'Q8xf2' |
+        'Q1xf3' | 'Q2xf3' | 'Q3xf3' | 'Q4xf3' | 'Q5xf3' | 'Q6xf3' | 'Q7xf3' | 'Q8xf3' |
+        'Q1xf4' | 'Q2xf4' | 'Q3xf4' | 'Q4xf4' | 'Q5xf4' | 'Q6xf4' | 'Q7xf4' | 'Q8xf4' |
+        'Q1xf5' | 'Q2xf5' | 'Q3xf5' | 'Q4xf5' | 'Q5xf5' | 'Q6xf5' | 'Q7xf5' | 'Q8xf5' |
+        'Q1xf6' | 'Q2xf6' | 'Q3xf6' | 'Q4xf6' | 'Q5xf6' | 'Q6xf6' | 'Q7xf6' | 'Q8xf6' |
+        'Q1xf7' | 'Q2xf7' | 'Q3xf7' | 'Q4xf7' | 'Q5xf7' | 'Q6xf7' | 'Q7xf7' | 'Q8xf7' |
+        'Q1xf8' | 'Q2xf8' | 'Q3xf8' | 'Q4xf8' | 'Q5xf8' | 'Q6xf8' | 'Q7xf8' | 'Q8xf8' | // 64
+        'Q1xg1' | 'Q2xg1' | 'Q3xg1' | 'Q4xg1' | 'Q5xg1' | 'Q6xg1' | 'Q7xg1' | 'Q8xg1' |
+        'Q1xg2' | 'Q2xg2' | 'Q3xg2' | 'Q4xg2' | 'Q5xg2' | 'Q6xg2' | 'Q7xg2' | 'Q8xg2' |
+        'Q1xg3' | 'Q2xg3' | 'Q3xg3' | 'Q4xg3' | 'Q5xg3' | 'Q6xg3' | 'Q7xg3' | 'Q8xg3' |
+        'Q1xg4' | 'Q2xg4' | 'Q3xg4' | 'Q4xg4' | 'Q5xg4' | 'Q6xg4' | 'Q7xg4' | 'Q8xg4' |
+        'Q1xg5' | 'Q2xg5' | 'Q3xg5' | 'Q4xg5' | 'Q5xg5' | 'Q6xg5' | 'Q7xg5' | 'Q8xg5' |
+        'Q1xg6' | 'Q2xg6' | 'Q3xg6' | 'Q4xg6' | 'Q5xg6' | 'Q6xg6' | 'Q7xg6' | 'Q8xg6' |
+        'Q1xg7' | 'Q2xg7' | 'Q3xg7' | 'Q4xg7' | 'Q5xg7' | 'Q6xg7' | 'Q7xg7' | 'Q8xg7' |
+        'Q1xg8' | 'Q2xg8' | 'Q3xg8' | 'Q4xg8' | 'Q5xg8' | 'Q6xg8' | 'Q7xg8' | 'Q8xg8' | // 64
+        'Q1xh1' | 'Q2xh1' | 'Q3xh1' | 'Q4xh1' | 'Q5xh1' | 'Q6xh1' | 'Q7xh1' | 'Q8xh1' |
+        'Q1xh2' | 'Q2xh2' | 'Q3xh2' | 'Q4xh2' | 'Q5xh2' | 'Q6xh2' | 'Q7xh2' | 'Q8xh2' |
+        'Q1xh3' | 'Q2xh3' | 'Q3xh3' | 'Q4xh3' | 'Q5xh3' | 'Q6xh3' | 'Q7xh3' | 'Q8xh3' |
+        'Q1xh4' | 'Q2xh4' | 'Q3xh4' | 'Q4xh4' | 'Q5xh4' | 'Q6xh4' | 'Q7xh4' | 'Q8xh4' |
+        'Q1xh5' | 'Q2xh5' | 'Q3xh5' | 'Q4xh5' | 'Q5xh5' | 'Q6xh5' | 'Q7xh5' | 'Q8xh5' |
+        'Q1xh6' | 'Q2xh6' | 'Q3xh6' | 'Q4xh6' | 'Q5xh6' | 'Q6xh6' | 'Q7xh6' | 'Q8xh6' |
+        'Q1xh7' | 'Q2xh7' | 'Q3xh7' | 'Q4xh7' | 'Q5xh7' | 'Q6xh7' | 'Q7xh7' | 'Q8xh7' |
+        'Q1xh8' | 'Q2xh8' | 'Q3xh8' | 'Q4xh8' | 'Q5xh8' | 'Q6xh8' | 'Q7xh8' | 'Q8xh8' | // 64
+
         'Qaa1' | 'Qaa2' | 'Qaa3' | 'Qaa4' | 'Qaa5' | 'Qaa6' | 'Qaa7' | 'Qaa8' |
         'Qab1' | 'Qab2' | 'Qab3' | 'Qab4' | 'Qab5' | 'Qab6' | 'Qab7' | 'Qab8' |
         'Qac1' | 'Qac2' | 'Qac3' | 'Qac4' | 'Qac5' | 'Qac6' | 'Qac7' | 'Qac8' |
@@ -1005,7 +1070,7 @@ QUEEN_MOVE :
         'Qxe1' | 'Qxe2' | 'Qxe3' | 'Qxe4' | 'Qxe5' | 'Qxe6' | 'Qxe7' | 'Qxe8' |
         'Qxf1' | 'Qxf2' | 'Qxf3' | 'Qxf4' | 'Qxf5' | 'Qxf6' | 'Qxf7' | 'Qxf8' |
         'Qxg1' | 'Qxg2' | 'Qxg3' | 'Qxg4' | 'Qxg5' | 'Qxg6' | 'Qxg7' | 'Qxg8' |
-        'Qxh1' | 'Qxh2' | 'Qxh3' | 'Qxh4' | 'Qxh5' | 'Qxh6' | 'Qxh7' | 'Qxh8' ; // 64
+        'Qxh1' | 'Qxh2' | 'Qxh3' | 'Qxh4' | 'Qxh5' | 'Qxh6' | 'Qxh7' | 'Qxh8' |; // 64
 
 KING_MOVE :
         'Kaa1' | 'Kaa2' | 'Kaa3' | 'Kaa4' | 'Kaa5' | 'Kaa6' | 'Kaa7' | 'Kaa8' |
