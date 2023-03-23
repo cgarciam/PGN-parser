@@ -1070,7 +1070,7 @@ QUEEN_MOVE :
         'Qxe1' | 'Qxe2' | 'Qxe3' | 'Qxe4' | 'Qxe5' | 'Qxe6' | 'Qxe7' | 'Qxe8' |
         'Qxf1' | 'Qxf2' | 'Qxf3' | 'Qxf4' | 'Qxf5' | 'Qxf6' | 'Qxf7' | 'Qxf8' |
         'Qxg1' | 'Qxg2' | 'Qxg3' | 'Qxg4' | 'Qxg5' | 'Qxg6' | 'Qxg7' | 'Qxg8' |
-        'Qxh1' | 'Qxh2' | 'Qxh3' | 'Qxh4' | 'Qxh5' | 'Qxh6' | 'Qxh7' | 'Qxh8' |; // 64
+        'Qxh1' | 'Qxh2' | 'Qxh3' | 'Qxh4' | 'Qxh5' | 'Qxh6' | 'Qxh7' | 'Qxh8'; // 64
 
 KING_MOVE :
         'Kaa1' | 'Kaa2' | 'Kaa3' | 'Kaa4' | 'Kaa5' | 'Kaa6' | 'Kaa7' | 'Kaa8' |
